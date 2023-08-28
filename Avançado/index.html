@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avalie a sua mentoria</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="/Avançado/assets/img1.png" alt="imagem de um balão com 5 estrelas para avaliação">.
+            <div class="top">INFORMAÇÕES PESSOAIS</div>
+        </header>
+
+        <form id="form-mentor">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input required type="text" id="name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="last-name">Sobrenome</label>
+                        <input required type="text" id="last-name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">Email <span>(digite um email válido)</span></label>
+                        <input required type="email" id="email">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="mentor">Selecione quem foi o seu mentor</label>
+                        <select id="mentor">
+                            <option value=""></option>
+                            <option value="live">Fábio Santana</option>
+                            <option value="podcast">Neemias Gonçalves</option>
+                            <option value="mentorship">Antônio Arruda</option>
+                           </select>    
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-info">Informações extras</span></label>
+                        <textarea id="event-info"></textarea>   
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="doubts"/>
+                        <label for="doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <label>AGENDANDO PRÓXIMA MENTORIA</label>
+
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-date">Data</label>
+                            <input required type="date" id="event-date"/>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-begin">Das</label>
+                            <input required type="time" id="event-begin"/>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-end">Até</label>
+                            <input required type="time" id="event-end"/>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            
+            
+        </form>
+        
+        <footer>
+            <button 
+            class="button" 
+            type="submit"
+            form="form-mentor">
+            SALVAR
+            </button>
+        </footer> 
+    </div>
+    
+</body>
+</html>
