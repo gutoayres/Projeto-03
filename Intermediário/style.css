@@ -102,6 +102,10 @@ fieldset legend {
     
 }
 
+.legend-group {
+    border-bottom: 0;
+}
+
 
 .input-wrapper {
     display: flex;
