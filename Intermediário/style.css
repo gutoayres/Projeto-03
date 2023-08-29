@@ -136,6 +136,19 @@ fieldset legend {
     background: var(--shapes-02, #FAFAFC);
 }
 
+.col-3 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 300px;
+}
+
+.col-3 > div:nth-child(2) {
+    width: 300px;
+}
+
 .col-1, .col-2 {
     display: flex;
     gap: 32px;
@@ -143,10 +156,25 @@ fieldset legend {
 
 .col-1 > div:nth-child(1) {
     width: 300px;
-    }
+}
 
+.col-1 > div:nth-child(2) {
+    width: 140px;
+}
+
+.col-1 > div:nth-child(3) {
+    width: 140px;
+}
 .col-2 > div:nth-child(1) {
     width: 300px;
+}
+
+.col-2 > div:nth-child(2) {
+    width: 140px;
+}
+
+.col-2 > div:nth-child(3) {
+    width: 140px;
 }
 
 footer {
@@ -185,5 +213,3 @@ footer .button:hover {
 input:invalid {
     border: 1px solid #ff1010;
 }
-
-

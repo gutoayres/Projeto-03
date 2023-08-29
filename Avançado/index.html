@@ -27,16 +27,18 @@
         <form id="form-mentor">
             <fieldset>
                 <div class="fieldset-wrapper">
-                    <div class="input-wrapper">
-                        <label for="name">Nome</label>
-                        <input required type="text" id="name">
+                    <div class="col-1">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input required type="text" id="name">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="last-name">Sobrenome</label>
+                            <input required type="text" id="last-name">
+                        </div>
                     </div>
-
-                    <div class="input-wrapper">
-                        <label for="last-name">Sobrenome</label>
-                        <input required type="text" id="last-name">
-                    </div>
-
+                    
                     <div class="input-wrapper">
                         <label for="email">Email <span>(digite um email válido)</span></label>
                         <input required type="email" id="email">
@@ -71,7 +73,7 @@
 
             <fieldset>
                 <div class="fieldset-wrapper">
-                    <label>AGENDANDO PRÓXIMA MENTORIA</label>
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
 
                     <div class="col-3">
                         <div class="input-wrapper">
@@ -93,17 +95,16 @@
             </fieldset>
 
             
+            <button 
+                class="button-save" 
+                type="submit"
+                form="form-mentor">
+                SALVAR
+            </button> 
             
         </form>
-        
-        <footer>
-            <button 
-            class="button" 
-            type="submit"
-            form="form-mentor">
-            SALVAR
-            </button>
-        </footer> 
+            
+            
     </div>
     
 </body>
